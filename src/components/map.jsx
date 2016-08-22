@@ -1,7 +1,7 @@
 import React from 'react';
 import mapStyle from '../styles/light-map'
 
-class Map extends React.Component {
+export default class Map extends React.Component {
   constructor(props) {
     super(props);
 
@@ -20,7 +20,6 @@ class Map extends React.Component {
 
   componentDidMount() {
     this.initializeMap();
-    // this.geolocate();
   }
 
   initializeMap() {
@@ -274,5 +273,3 @@ class Map extends React.Component {
   	);
   }
 }
-
-export default Map
